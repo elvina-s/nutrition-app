@@ -4,8 +4,6 @@ import { LoaderPage } from "./LoaderPage";
 import { Nutritions } from "./Nutritions";
 
 function App() {
-// https://api.edamam.com/api/nutrition-details?app_id=c40b5955&app_key=360e05468e78ddc1631a83a4c96cf7fe
-
   const MY_ID = "c40b5955";
   const MY_KEY = "360e05468e78ddc1631a83a4c96cf7fe";
   const apiLink = "https://api.edamam.com/api/nutrition-details";
