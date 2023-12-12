@@ -1,3 +1,7 @@
+body {
+  background-color: pink;
+}
+
 .container_loader {
   position: absolute;
   width: 100%;

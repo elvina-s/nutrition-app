@@ -1,5 +1,5 @@
-import './App.css';
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 import { LoaderPage } from "./LoaderPage";
 import { Nutritions } from "./Nutritions";
 
@@ -40,12 +40,12 @@ function App() {
       "Accept": "application/json",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ ingr : ingr })
+    body: JSON.stringify({ ingr })
     })
 
     if(response.ok) {
       setStateLoader(false);
-      const data = response.json();
+      const data = await response.json();
       setResults(data);
     }
     else {
